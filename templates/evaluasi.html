@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Model Evaluation</title>
+  </head>
+  <body>
+    <h1>2020020145 - Wahyu Isnaeni</h1>
+    <h2>Hasil Evaluasi</h2>
+    <p><h4>Data Uji: {{ evaluation.data_uji }}</h4></p>
+    <p><h4>Kernel: {{ evaluation.kernel }}</h4></p>
+    <p><h4>Parameter Gamma (y) Khusus Radial Basis Function Kernel: {{ evaluation.parameter_gamma }}</h4></p>
+    <p><h4>Parameter Regulasi(C): {{ evaluation.parameter_regulasi }}</h4></p>
+    <p><h4>Parameter Derajat (d) Khusus Polynomial Kernel: {{ evaluation.parameter_derajat }}</h4></p>
+    <p><h4>Parameter Coefisien (c) Khusus Polynomial & Sigmoid Kernel: {{ evaluation.parameter_coefisien }}</h4></p>
+    <p><h2>Akurasi: {{ evaluation.accuracy }}</h2></p>
+    <p><h2>Presisi: {{ evaluation.precision }}</h2></p>
+    <p><h2>Recall: {{ evaluation.recall }}</h2></p>
+    <p><h2>F1 Score: {{ evaluation.f1_score  }}</h2></p>
+    <a href="/">Kembali</a>
+    <a href="/predict">Lanjutkan ke Prediksi</a>
+  </body>
+</html>

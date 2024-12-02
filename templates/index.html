@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <title>SVM</title>
+</head>
+<body>
+  <h1>202002145 - Wahyu Isnaeni</h1>
+  <h2>Penerapan SVM untuk evaluasi data latih</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    Upload Dataset (csv) <input type="file" name="file" accept=".csv"><br>
+    Data Uji (0-1) <input type="text" name="data_uji"><br>
+    Kernel
+    <select name="kernel">
+      <option value="linear">Linear kernel</option>
+      <option value="poly">Polynomial Kernel</option>
+      <option value="rbf">Radial Basis Functions</option>
+      <option value="sigmoid">Sigmoid Kernel</option>
+    </select><br>
+    Parameter Regulasi (C) <input type="text" name="C" value="1"><br>
+    Parameter Gamma (y) Khusus Radial Basis Function Kernel <input type="text" name="y" value="0"><br>
+    Parameter Derajat (d) Khusus Polynomial Kernel <input type="text" name="d" value="0"><br>
+    Parameter Coefisien (c) Khusus Polynomial & Sigmoid Kernel <input type="text" name="coef" value="0"><br>
+    <button type="submit">Kirim</button>
+  </form>
+</body>
+</html>
